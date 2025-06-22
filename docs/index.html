@@ -1,80 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment form</title>
-    <link rel="stylesheet" href="output.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-</head>
-<body class="bg-blue-200">
-    
-<div class=" bg-white w-[30rem] md:w-[55rem] lg:w-[55rem] lg:h-[32rem] md:h-[40rem] absolute top-4 py-2 lg:relative md:relative  md:mt-48 lg:mt-12 mx-auto rounded-[10px] flex lg:flex-row md:flex-row flex-col  text-white ">
-     <!-- card design -->
-    <div class="w-[22rem] h-[13rem] my-auto  bg-gradient-to-br from-purple-500 to-blue-600 relative  mx-10 rounded-lg">
-       <h1 class="text-[27px] py-20 px-5  font-mono">0000  0000  0000  0000</h1>
-       <div class="flex justify-between absolute top-32 px-5 text-lg  w-full">
-        <p class="text-gray-400 text-sm pt-5">CARD HOLDER</p>
-        <p class="leading-8"><span class="text-gray-400 text-sm"> VALID THRU </span> <br> <span class="pl-3">MM/YY</span></p>
-       </div>
-    </div>
-    <!-- Form design -->
-    <div class="mt-10 mx-5 ">
-        <h1 class="text-gray-700 text-2xl font-bold">Payment Details</h1>
 
-    <!-- Form -->
-<form class="max-w-md mx-auto my-10">
-  <div class="relative z-0 w-full mb-5 group my-14">
-    <label for="floating_email" class="peer-focus:font-medium absolute  text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Cardholder Name</label>  
-    <div class="relative">
-        <div  class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(148, 147, 147, 1);transform: ;msFilter:;">
-        <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg>
-        </div>
-    <input  type="text" name="floating_name" id="floating_name"  class="block py-2.5 pl-11 w-full text-sm  text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg  focus:border-blue-500 focus:outline-none  peer placeholder:text-gray-300 " placeholder=" FullName" required />
-</div>  
-</div>
-  <div class="relative z-0 w-full mb-5 group my-14">
-      <label for="floating_password" class="peer-focus:font-medium absolute  text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Card Number</label>
-     <div class="relative">
-     <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(148, 147, 147, 1);transform: ;msFilter:;">
-     <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z"></path><path d="M6 14h6v2H6z"></path></svg>
-     </div>
-       <input type="number" name="floating_number" id="floating_number" class="block py-2.5 pl-11 w-full text-sm  text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg  focus:border-blue-500 focus:outline-none placeholder:text-gray-300 " placeholder="0000  0000  0000  0000 " required />
-    </div>
-    </div>
- 
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group my-14">
-        <label for="floating_first_name" class="peer-focus:font-medium absolute  text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Exp Date</label>
-        <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(148, 147, 147, 1);transform: ;msFilter:;">
-        <path d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"></path></svg>
-        </div>
-       <input type="text" name="floating_date" id="floating_date" class="block py-2.5 pl-11 w-full text-sm  text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg  focus:border-blue-500 focus:outline-none  peer placeholder:text-gray-300 " placeholder="MM/YY " required />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment form</title>
+  <link rel="stylesheet" href="output.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+ <style>
+    .flip-card {
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .cardfront, .cardback {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 0.5rem;
+    }
+
+    .cardfront {
+      background: linear-gradient(to bottom right, #8b5cf6, #3b82f6); /* from-purple-500 to-blue-600 */
+      color: white;
+    }
+
+    .cardback {
+      background: linear-gradient(to bottom right, #3b82f6, #8b5cf6); /* reversed */
+      transform: rotateY(180deg);
+    }
+  </style>
+
+<body class="bg-blue-200">
+  <div
+    class="bg-white w-[30rem] md:w-[55rem] lg:w-[55rem] lg:h-[32rem] md:h-[40rem] absolute top-4 py-2 lg:relative md:relative md:mt-48 lg:mt-12 mx-auto rounded-[10px] flex lg:flex-row md:flex-row flex-col ">
+    <!-- card design -->
+
+   <!-- Flip Card Container -->
+<div class="flip-card  w-[22rem] h-[13rem] my-auto mx-10" id="flip-card">
+  <!-- Inner rotating container -->
+  <div class="flip-card-inner relative w-full h-full">
+    <!-- Front of the card -->
+    <div class="cardfront absolute w-full h-full bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg text-white">
+      <h1 class="text-[27px] py-20 px-5 font-mono " id="Cardnumber-display">0000 0000 0000 0000</h1>
+      <div class="flex justify-between absolute top-32 px-5 text-lg w-full">
+        <p class="text-gray-300 text-sm pt-5 " id="Cardholder-display">CARD HOLDER</p>
+        <p class="leading-8">
+          <span class="text-gray-300 text-sm">VALID THRU</span><br>
+          <span class="pl-3" id="Expdate-display">MM/YY</span>
+        </p>
       </div>
     </div>
-    <div class="relative z-0 w-full mb-5 group my-14">
-        <label for="floating_last_name" class="peer-focus:font-medium absolute  text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">CVV </label>
-       <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(148, 147, 147, 1);transform: ;msFilter:;">
-        <path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm6 10 .002 8H6v-8h12zm-9-2V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9z"></path></svg>
-        </div>
-        <input type="number" name="floating_PIN" id="floating_PIN" class="block py-2.5 pl-11 w-full text-sm  text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg  focus:border-blue-500 focus:outline-none  peer placeholder:text-gray-300 " placeholder=" 0000" required />
-        </div>
+
+    <!-- Back of the card -->
+   <div class="cardback absolute w-full h-full bg-gradient-to-br from-blue-600 to-purple-500 rounded-lg">
+  <div class="p-5">
+    <div class=" h-10 w-full mt-10 bg-white p-2 mb-4 text-black">
+      <p class="text-right text-xl" >
+        CVV: <span class="font-bold" id="Cvv-display">***</span>
+      </p>
     </div>
   </div>
-  <button type="submit" class="text-white  bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  w-full px-5 py-2.5 text-center ">Confirm</button>
-</form>
-
-
-    </div>
-
 </div>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  </div>
+</div>
+
+    <!-- Form design -->
+    <div class="mt-10 mx-5">
+      <h1 class="text-gray-700 text-2xl font-bold">Payment Details</h1>
+
+      <!-- Form -->
+      <form class="max-w-md mx-auto my-10">
+        <div class="relative z-0 w-full mb-5 group my-14">
+          <label for="floating_email"
+            class="peer-focus:font-medium absolute text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Cardholder
+            Name</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(148, 147, 147, 1); transform: ; msfilter: ">
+                <path
+                  d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                </path>
+              </svg>
+            </div>
+            <input type="text" name="Cardholder-inp"  id="Cardholder-inp"
+              class="block py-2.5 pl-11 w-full text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none peer placeholder:text-gray-300"
+              placeholder=" FullName" required />
+          </div>
+        </div>
+        <div class="relative z-0 w-full mb-5 group my-14">
+          <label for="floating_password"
+            class="peer-focus:font-medium absolute text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" >Card
+            Number</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgba(148, 147, 147, 1); transform: ; msfilter: ">
+                <path
+                  d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z">
+                </path>
+                <path d="M6 14h6v2H6z"></path>
+              </svg>
+            </div>
+            <input type="text" name="Cardnumber-inp" id="Cardnumber-inp"
+              class="block py-2.5 pl-11 w-full text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none placeholder:text-gray-300"
+              placeholder="0000  0000  0000  0000 " required />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group my-14">
+            <label for="floating_first_name"
+              class="peer-focus:font-medium absolute text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" >Exp
+              Date</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="
+                      fill: rgba(148, 147, 147, 1);
+                      transform: ;
+                      msfilter: ;
+                    ">
+                  <path
+                    d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z">
+                  </path>
+                </svg>
+              </div>
+              <input type="text" name="Expdate-inp" id="Expdate-inp"
+                class="block py-2.5 pl-11 w-full text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none peer placeholder:text-gray-300"
+                placeholder="MM/YY " required />
+            </div>
+          </div>
+          <div class="relative z-0 w-full mb-5 group my-14">
+            <label for="floating_last_name"
+              class="peer-focus:font-medium absolute text-xl bottom-10 font-mono text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" >CVV
+            </label>
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="
+                      fill: rgba(148, 147, 147, 1);
+                      transform: ;
+                      msfilter: ;
+                    ">
+                  <path
+                    d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm6 10 .002 8H6v-8h12zm-9-2V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9z">
+                  </path>
+                </svg>
+              </div>
+              <input type="password" name="Cvv-inp" id="Cvv-inp"
+                class="block py-2.5 pl-11 w-full text-sm text-gray-900 bg-transparent border-2 border-b-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none peer placeholder:text-gray-300"
+                placeholder=" ***" required />
+            </div>
+          </div>
+        </div>
+        <button type="submit"
+          class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center">
+          Confirm
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="/docs/indes.js"></script>
 </body>
+
 </html>
